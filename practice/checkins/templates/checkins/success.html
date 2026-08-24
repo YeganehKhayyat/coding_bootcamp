@@ -1,0 +1,22 @@
+<p>حال امروزت با موفقیت ثبت شد رفیق!</p>
+<br><br>
+<ul> 
+    {% if mood.score >= 4 %}
+    <li>Score: {{ mood.score }} ------ > روز خوبی داشتی به نظر</li>
+    {% elif mood.score >= 3 %}
+    <li>Score: {{ mood.score }} ------ > روز نه چندان بد و نه چندان خوبی بوده برات</li>
+    {% else %}
+   
+    <li>Score: {{ mood.score }} ------ >غصه نخور میگذره </li>
+    {% endif %}
+
+    <li>Energy Level: {{ mood.energy_level }}</li>
+</ul>
+<br><br>
+<a href="/add">ثبت مود جدید</a>
+<br><br>
+<a href="/home">بازگشت به صفحه اصلی</a>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
